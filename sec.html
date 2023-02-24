@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>So secret</title>
+</head>
+
+<body>
+    <h2>Enter the credential to retrieve</h2>
+    <form action="https://nen1ji3g84.execute-api.us-east-1.amazonaws.com/get" class="form">
+        <input type="text" name="keyword" placeholder="keyword">
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <script>
+        const formEl = document.querySelector('.form');
+
+        formEl.addEventListener('submit', () => {
+            // after submit, browser always return an object called event
+            event.preventDefault();
+
+            // Getting the form data with formData
+            const formData = new FormData(formEl);
+            // This will log the input keyword => console.log(formData.get('keyword')); ## super
+
+            // create a JS object out of the form data
+            const data = Object.fromEntries(formData);
+
+            // console.log(data)                          // {keyword: 'ssd'}   keyword is the name of <input>
+            // console.log(data.keyword)                  // ssd
+
+            // Send the data to an Api using the fetch() method
+            fetch('https://nen1ji3g84.execute-api.us-east-1.amazonaws.com/test01', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) // This is the conversion JS -> JSON
+            });
+
+        });
+
+    </script> -->
+</body>
+
+</html>
